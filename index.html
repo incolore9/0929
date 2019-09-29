@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>대환장 동물파티</title>
+	<style type="text/css">
+	
+
+		#b{position: absolute; left: 2%; top: 5%; 
+			width: 150px; height: auto;}
+		#c{position: absolute; left: 5%; top: 50%;
+			width: 200px; height: auto;}
+		#j{position: absolute; left: 25%; top: 70%;
+			width: 200px; height: auto;}
+		#p{position: absolute; left: 35%; top: 20%;
+			width: 400px; height: auto;}
+		#cat{position: absolute; left: 52%; top: 65%;
+			width: 250px; height: auto;}
+		#cow{position: absolute; left: 75%; top: 50%;
+			width: 300px; height: auto;}
+
+		#bg{width: auto; height: 1000px;
+			  background-position: center;
+			  background-repeat: no-repeat;
+			  background-size: cover;
+			  position: relative;}
+
+	
+	</style>
+</head>
+
+
+<body background="bg.jpg" id="bg">
+	<img src="1.png" class="thum" id="b">
+	<audio src="1.mp3" loop id="bs"></audio>
+
+	<img src="2.png" class="thum" id="c">
+	<audio src="2.wav" loop id="cs"></audio>
+
+	<img src="3.png" class="thum" id="j">
+	<audio src="3.wav" loop id="js"></audio>
+
+	<img src="4.png" class="thum" id="p">
+	<audio src="4.wav" loop id="ps"></audio>
+
+	<img src="5.png" class="thum" id="cat">
+	<audio src="5.mp3" loop id="cats"></audio>
+
+	<img src="6.png" class="thum" id="cow">
+	<audio src="6.mp3" loop id="cows"></audio>
+
+	<script type="text/javascript">
+	
+	var bstate = "off";
+		b.onclick = function(){
+			if(bstate == "off"){
+				bs.play();
+				bstate = "on";
+				b.style.width = "200px"
+			}else{
+				bs.pause();
+				bstate = "off";	
+				b.style.width = "150px"
+			}
+		}
+
+	var cstate = "off";
+		c.onclick = function(){
+			if(cstate == "off"){
+				cs.play();
+				cstate = "on";
+				c.style.width = "250px"	
+			}else{
+				cs.pause();
+				cstate = "off";
+				c.style.width = "200px"	
+			}
+		}
+
+
+	var jstate = "off";
+		j.onclick = function(){
+			if(jstate == "off"){
+				js.play();
+				jstate = "on";
+				j.style.width = "250px"
+			}else{
+				js.pause();
+				jstate = "off";	
+				j.style.width = "200px"
+			}
+		}
+
+		var pstate = "off";
+		p.onclick = function(){
+			if(pstate == "off"){
+				ps.play();
+				pstate = "on";
+				p.style.width = "450px"
+			}else{
+				ps.pause();
+				pstate = "off";
+				p.style.width = "400px"	
+			}
+		}
+
+
+		var catstate = "off";
+		cat.onclick = function(){
+			if(catstate == "off"){
+				cats.play();
+				catstate = "on";
+				cat.style.width = "350px"	
+			}else{
+				cats.pause();
+				catstate = "off";
+				cat.style.width = "250px"
+
+
+			}
+		}
+
+
+		var cowstate = "off";
+		cow.onclick = function(){
+			if(cowstate == "off"){
+				cows.play();
+				cowstate = "on";
+				cow.style.width = "350px"	
+			}else{
+				cows.pause();
+				cowstate = "off";
+				cow.style.width = "300px"
+
+					
+			}
+		}
+
+
+
+	</script>
+</body>
+</html>
